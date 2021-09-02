@@ -158,10 +158,10 @@ header .right-nav .profile img {
 section {
   height: 100vh;
   width: 100%;
-  background-color: aquamarine;
   display: flex;
   flex-direction: column;
   background-color: #f9f9f9;
+  cursor: pointer;
 }
 
 section .banner-position {
@@ -202,5 +202,110 @@ section .banner-position small {
   font-style: normal;
   font-size: 14px;
   color: #fff;
+}
+
+section .menu {
+  width: 100%;
+  height: 572px;
+  display: flex;
+  flex-direction: column;
+}
+
+section .menu-options {
+  height: 63px;
+  width: 100%;
+  margin: 30px 0px 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section .menu-options button {
+  color: #191919;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  font-size: 14px;
+  color: #191919;
+  padding: 5px 15px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  margin: 0px 4px;
+  background-color: transparent;
+}
+
+section .menu-options button:nth-child(1) {
+  background-color: #191919;
+  color: white;
+}
+
+section .menu-options button:nth-child(5), section .menu-options button:nth-child(6) {
+  color: #696969;
+}
+
+section .menu-options button:nth-child(2):hover, section .menu-options button:nth-child(3):hover, section .menu-options button:nth-child(4):hover, section .menu-options button:nth-child(5):hover, section .menu-options button:nth-child(6):hover {
+  background-color: #ececec;
+}
+
+section .menu .create-project {
+  background-color: #fff;
+  height: 250px;
+  width: 320px;
+  margin-left: 460px;
+  border: 1px dashed #c4bdbd;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section .menu .create-project .add-project {
+  background-color: #dee8ff;
+  height: 73px;
+  width: 73px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section .menu .create-project .add-project .fas {
+  color: #0057ff;
+}
+
+section .menu .create-project button {
+  color: #191919;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  font-size: 14px;
+  color: #191919;
+  padding: 5px 15px;
+  border-radius: 20px;
+  border: 1px solid #ececec;
+  margin: 20px 4px 10px;
+  background-color: transparent;
+}
+
+section .menu .create-project button:hover {
+  background-color: #ececec;
+}
+
+section .menu .create-project p {
+  text-align: center;
+  color: #191919;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #959595;
+  margin: 10px 20px 10px;
 }
 /*# sourceMappingURL=profile.css.map */
