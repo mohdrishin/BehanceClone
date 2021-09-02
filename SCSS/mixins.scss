@@ -1,0 +1,7 @@
+@mixin headerFontF{
+    color: $text-primary;
+    font-family: $font-primary;
+    font-weight: 600;
+    line-height: 22px;
+    font-style: normal;
+}
