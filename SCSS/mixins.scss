@@ -5,3 +5,90 @@
     line-height: 22px;
     font-style: normal;
 }
+
+@mixin reset{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+// Header Section Code Starts Here
+@mixin header{
+    height: 53px;
+    width: 100%;
+    display: flex;
+    background-color: $bgcolor;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 23px;
+    border-bottom: 1px solid $btn-border;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    .left-nav{
+        display: flex;
+        align-items: center;
+        @include fontstack;
+        font-size: 16px;
+        img{
+            margin-right: 18px;
+            height: 15px;
+        }
+        ul{
+            list-style: none;
+            li{
+                display: inline-block;
+                padding-right: 15px;
+            }
+        }    
+    }
+    .input-container{
+        position: relative;
+        input{
+            width:400px;
+            height: 33px;
+            border-radius: 20px;
+            border: 2px solid $btn-border;
+            padding: 10px 0px 10px 30px;
+            @include fontstack;
+            font-weight: 500;
+            font-size: 15px;
+        }
+        img{
+            position: absolute;
+            bottom: 8px;
+            left: 10px;
+            width: 17px;
+            height: 17px;
+        }
+    }
+    .right-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        button{
+            width:144px;
+            height: 33px;
+            border-radius: 20px;
+            @include fontstack;
+            border: 1px solid $btn-border;
+            background-color: transparent;
+            margin-right: 20px;
+        }
+        i{
+            margin-right: 15px;
+        }
+        .profile{
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            background-color: turquoise;
+            margin-right: 20px;
+            img{
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Header Section Code Ends Here
