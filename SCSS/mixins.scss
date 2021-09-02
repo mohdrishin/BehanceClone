@@ -51,7 +51,13 @@
             li{
                 display: inline-block;
                 padding-right: 15px;
+                cursor: pointer;
+                a{
+                    text-decoration: none;
+                    color: $text-primary;
+                }
             }
+            
         }    
     }
     .input-container{

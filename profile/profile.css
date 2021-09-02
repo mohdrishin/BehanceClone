@@ -90,6 +90,12 @@ header .left-nav ul {
 header .left-nav ul li {
   display: inline-block;
   padding-right: 15px;
+  cursor: pointer;
+}
+
+header .left-nav ul li a {
+  text-decoration: none;
+  color: #191919;
 }
 
 header .input-container {
