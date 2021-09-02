@@ -1,0 +1,9 @@
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-family: $font-primary;
+        font-weight: 600;
+        line-height: 22px;
+        font-style: normal;
+        color: $text-primary;
+    }
+}
