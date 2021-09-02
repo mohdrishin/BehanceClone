@@ -148,10 +148,12 @@ header .right-nav .profile {
   border-radius: 50%;
   background-color: turquoise;
   margin-right: 20px;
+  overflow: hidden;
 }
 
 header .right-nav .profile img {
   object-fit: cover;
+  height: 100%;
   width: 100%;
 }
 
