@@ -11,6 +11,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+@mixin flexAllCnt {
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+
+
+
+
+
 // Header Section Code Starts Here
 @mixin header{
     height: 53px;
