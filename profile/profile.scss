@@ -127,7 +127,7 @@ section{
         top: 60px;
         left: 50px;
         border-radius: 4px;
-        box-shadow: $profile-shadow;
+        box-shadow: $shadow-sm;
         @include fontstack;
         @include flexAllCnt;
         flex-direction: column;
