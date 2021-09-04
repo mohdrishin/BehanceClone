@@ -415,11 +415,9 @@ section .profile-card p {
 }
 
 .profile-container {
-  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #f9f9f9;
   cursor: pointer;
   position: relative;
 }
@@ -506,7 +504,7 @@ section .profile-card p {
   width: 322px;
   border-radius: 6px;
   overflow: hidden;
-  margin-bottom: 22px;
+  margin-bottom: 40px;
   position: relative;
 }
 
@@ -570,18 +568,19 @@ section .profile-card p {
 .profile-container .menu-wrapper .project-container .project-wrapper .projects:hover .projects-info {
   visibility: visible;
   opacity: 1;
-  box-shadow: inset 0px -40px 50px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 10px -40px 50px 30px rgba(0, 0, 0, 0.5);
 }
 
 .profile-container .profile-card {
-  height: 446px;
+  height: max-content;
   width: 362px;
   background-color: #fff;
   position: absolute;
   top: 60px;
   left: 50px;
   border-radius: 4px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 33px;
   color: #191919;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
@@ -627,6 +626,12 @@ section .profile-card p {
   margin: 20px 0px;
 }
 
+.profile-container .profile-card h4 {
+  font-weight: 400;
+  font-size: 15px;
+  color: #696969;
+}
+
 .profile-container .profile-card .user-location {
   font-size: 14px;
   font-weight: 400;
@@ -662,8 +667,92 @@ section .profile-card p {
   background-color: #013ecb;
 }
 
+.profile-container .profile-card .message {
+  background-color: #fff;
+  color: #0057ff;
+  border: 1px solid #dfdfdf;
+}
+
+.profile-container .profile-card .message .fas {
+  color: #0057ff;
+}
+
+.profile-container .profile-card .message:hover {
+  background-color: #dee8ff;
+}
+
+.profile-container .profile-card .profile-stats {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.profile-container .profile-card .profile-stats div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2px;
+  height: 30px;
+}
+
+.profile-container .profile-card .profile-stats div p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #191919;
+  padding-top: -5px;
+}
+
+.profile-container .profile-card .social-icons {
+  height: max-content;
+  width: 100%;
+  margin: 15px 0px;
+}
+
+.profile-container .profile-card .social-icons .fab {
+  margin-right: 8px;
+}
+
+.profile-container .profile-card .social-icons a {
+  text-decoration: none;
+  color: black;
+}
+
+.profile-container .profile-card .social-texts {
+  width: 100%;
+  margin: 8px 0px;
+}
+
+.profile-container .profile-card .social-texts a {
+  text-decoration: none;
+}
+
+.profile-container .profile-card .social-texts p {
+  margin: 7px 0;
+  font-size: 13px;
+  font-weight: 400;
+  color: #696969;
+}
+
+.profile-container .profile-card .profile-contact {
+  width: 100%;
+  margin: 8px 0px;
+  color: #191919;
+}
+
+.profile-container .profile-card .profile-contact p {
+  font-weight: 700;
+  font-size: 11px;
+  margin: 7px 0;
+}
+
+.profile-container .profile-card .profile-contact small {
+  font-size: 13px;
+  font-weight: 400;
+}
+
 .profile-container .profile-card p {
-  margin: 20px 0px;
+  margin: 30px 0px 2px;
   font-size: 11px;
   font-weight: 400;
   color: #191919;

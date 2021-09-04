@@ -204,11 +204,11 @@ section{
 // Other User Profile Pages CSS Stylesheet
 
 .profile-container{
-    height: 100vh;
+    // height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: $profile-bg;
+    // background-color: $profile-bg;
     cursor: pointer;
     position: relative;
     .banner-position{
@@ -278,7 +278,7 @@ section{
                     width: 322px;
                     border-radius: 6px;
                     overflow: hidden;
-                    margin-bottom: 22px;
+                    margin-bottom: 40px;
                     position: relative;
                     
                     img{
@@ -334,7 +334,7 @@ section{
                     &:hover .projects-info{
                         visibility: visible;
                         opacity: 1;
-                        box-shadow: inset 0px -40px 50px 0px rgba(0, 0, 0, 0.50);
+                        box-shadow: inset 10px -40px 50px 30px rgba(0, 0, 0, 0.50);
                     }
                 }
             }
@@ -344,14 +344,16 @@ section{
 
     // User Profile Card
     .profile-card {
-        height: 446px;
+        height: max-content;
         width: 362px;
         background-color: $bgcolor;
+        // background-color: rgb(213, 247, 136);
         position: absolute;
         top: 60px;
         left: 50px;
         border-radius: 4px;
-        box-shadow: $shadow-sm;
+        box-shadow: $shadow-md;
+        padding: 33px;
         @include fontstack;
         @include flexAllCnt;
         flex-direction: column;
@@ -386,6 +388,11 @@ section{
             max-width: 300px;
             margin: 20px 0px;
         }
+        h4{
+            font-weight: 400;
+            font-size: 15px;
+            color: $icon-clr;
+        }
         .user-location{
             font-size: 14px;
             font-weight: 400;
@@ -416,8 +423,78 @@ section{
                 background-color: #013ecb;
             }
         }
+        .message{
+            background-color: $bgcolor;
+            color: $add-clr;
+            border:1px solid $btn-border;
+            .fas{
+                color: $add-clr;
+            }
+            &:hover{
+                background-color: $project-plus;
+            }
+        }
+        .profile-stats{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 30px;
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 2px;
+                height: 30px;
+                p{
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: $text-primary;
+                    padding-top: -5px;
+                }
+            }
+        }
+        .social-icons{
+            height: max-content;
+            width: 100%;
+            margin: 15px 0px;
+            .fab{
+                margin-right: 8px;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+        .social-texts{
+            // height: max-content;
+            width: 100%;
+            margin: 8px 0px;
+            a{
+                text-decoration: none;
+            }
+            p{
+                margin: 7px 0;
+                font-size: 13px;
+                font-weight: 400;
+                color: $icon-clr;
+            }
+        }
+        .profile-contact{
+            width: 100%;
+            margin: 8px 0px;
+            color: $text-primary;
+            p{
+                font-weight: 700;
+                font-size: 11px;
+                margin: 7px 0;
+            }
+            small{
+                font-size: 13px;
+                font-weight: 400;
+            }
+        }
         p{
-            margin: 20px 0px;
+            margin: 30px 0px 2px;
             font-size: 11px;
             font-weight: 400;
             color: $text-primary;
