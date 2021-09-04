@@ -201,4 +201,203 @@ section{
     }
 }
 
-    
+// Other User Profile Pages CSS Stylesheet
+
+.profile-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $profile-bg;
+    cursor: pointer;
+    position: relative;
+    .banner-position{
+        width: 100%;
+        height: 209px;
+        background-color: $banner-clr;
+        @include flexAllCnt;
+        flex-direction: column;
+        &:hover{
+            background-color: $banner-hover;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .menu-wrapper{
+        width: 100%;
+        height: 572px;
+        display: flex;
+        flex-direction: column;
+        .menu-options{
+            height: 63px;
+            width: 100%;
+            margin: 30px 0px 13px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 460px;
+            button{
+                @include fontstack;
+                font-size: 14px;
+                color: $text-primary;
+                padding:5px 15px;
+                border-radius: 20px;
+                border:1px solid transparent;
+                margin:0px 4px;
+                background-color: transparent;
+                &:nth-child(1){
+                    background-color: $button-activebg;
+                    color: white;
+                }
+                &:nth-child(2):hover,&:nth-child(3):hover{
+                    background-color: $button-hover;
+                } 
+            }
+        }
+        // Project Section Starts Here
+        .project-container {
+            height: max-content;
+            margin: 26px;
+            width: auto;
+            padding-bottom: 50px;
+            padding-left: 450px;
+            .project-wrapper {
+                height: max-content;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                
+                // Project Card 
+                .projects{
+                    // margin-top: 30px ;
+                    height: 256px;
+                    width: 322px;
+                    border-radius: 6px 6px 0px 0px;
+                    overflow: hidden;
+                    img{
+                        height: 275px;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                    &-info{
+                        background-color: transparent;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 7px 2px;
+                        @include fontstack;
+                        .user{
+                            display: flex;
+                            img{
+                                height: 20px;
+                                width: 20px;
+                                object-fit: cover;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                            }
+                            p{
+                                font-size: 13px;
+                            }
+                        }
+                        .photo-stats{
+                            display: flex;
+                            font-size: 12px;
+                            color: $icon-clr;
+                            p{
+                                margin-right: 10px;
+                                .fas{
+                                    padding-right: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // Project Section Ends Here
+    }
+    .profile-card {
+        height: 446px;
+        width: 362px;
+        background-color: $bgcolor;
+        position: absolute;
+        top: 60px;
+        left: 50px;
+        border-radius: 4px;
+        box-shadow: $shadow-sm;
+        @include fontstack;
+        @include flexAllCnt;
+        flex-direction: column;
+        .profile-pic{
+            height: 110px;
+            width: 110px;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            &::after{
+                content:'+';
+                color: $bgcolor;
+                height: 22px;
+                text-align: center;
+                width: 22px;
+                // padding: 5px;
+                border-radius: 50%;
+                position: absolute;
+                bottom:5px;
+                right: 5px;
+                background-color: $add-clr;
+            }
+        }
+        h2{
+            font-size: 24px;
+            font-weight: 600;
+            color: $text-primary;
+            max-width: 300px;
+            margin: 20px 0px;
+        }
+        .user-location{
+            font-size: 14px;
+            font-weight: 400;
+            color: $icon-clr;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+            .fas{
+                margin-right: 8px;
+            }
+        }
+        button{
+            width: 296px;
+            height: 40px;
+            text-align: center;
+            background-color: $add-clr;
+            border-radius: 20px;
+            border:1px solid $add-clr;
+            color: $bgcolor;
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            .fas{
+                color: $bgcolor;
+                margin-right: 8px;
+            }
+            &:hover{
+                background-color: #013ecb;
+            }
+        }
+        p{
+            margin: 20px 0px;
+            font-size: 11px;
+            font-weight: 400;
+            color: $text-primary;
+        }
+    }
+}
