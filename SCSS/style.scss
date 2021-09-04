@@ -54,6 +54,10 @@ header{
                         border-radius: 50%;
                         margin-right: 5px;
                     }
+                    a{
+                        text-decoration: none;
+                        color: $text-primary;
+                    }
                     p{
                         font-size: 13px;
                     }

@@ -220,6 +220,11 @@ header .right-nav .profile img {
   margin-right: 5px;
 }
 
+.project-container .project-wrapper .projects-info .user a {
+  text-decoration: none;
+  color: #191919;
+}
+
 .project-container .project-wrapper .projects-info .user p {
   font-size: 13px;
 }
