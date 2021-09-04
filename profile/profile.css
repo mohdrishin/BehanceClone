@@ -504,12 +504,14 @@ section .profile-card p {
 .profile-container .menu-wrapper .project-container .project-wrapper .projects {
   height: 256px;
   width: 322px;
-  border-radius: 6px 6px 0px 0px;
+  border-radius: 6px;
   overflow: hidden;
+  margin-bottom: 22px;
+  position: relative;
 }
 
 .profile-container .menu-wrapper .project-container .project-wrapper .projects img {
-  height: 275px;
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
@@ -517,44 +519,58 @@ section .profile-card p {
 .profile-container .menu-wrapper .project-container .project-wrapper .projects-info {
   background-color: transparent;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 7px 2px;
+  width: 100%;
+  flex-direction: column;
+  padding: 7px 10px;
   color: #191919;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   line-height: 22px;
   font-style: normal;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  visibility: hidden;
+  transition: opacity .2s, visibility .2s;
 }
 
-.profile-container .menu-wrapper .project-container .project-wrapper .projects-info .user {
+.profile-container .menu-wrapper .project-container .project-wrapper .projects-info h4 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  padding-bottom: 6px;
+}
+
+.profile-container .menu-wrapper .project-container .project-wrapper .projects-info .user-stats {
   display: flex;
+  justify-content: space-between;
 }
 
-.profile-container .menu-wrapper .project-container .project-wrapper .projects-info .user img {
-  height: 20px;
-  width: 20px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-right: 5px;
-}
-
-.profile-container .menu-wrapper .project-container .project-wrapper .projects-info .user p {
+.profile-container .menu-wrapper .project-container .project-wrapper .projects-info .user-stats .user p {
   font-size: 13px;
 }
 
-.profile-container .menu-wrapper .project-container .project-wrapper .projects-info .photo-stats {
+.profile-container .menu-wrapper .project-container .project-wrapper .projects-info .user-stats .photo-stats {
   display: flex;
   font-size: 12px;
   color: #696969;
+  padding-bottom: 6px;
 }
 
-.profile-container .menu-wrapper .project-container .project-wrapper .projects-info .photo-stats p {
+.profile-container .menu-wrapper .project-container .project-wrapper .projects-info .user-stats .photo-stats p {
   margin-right: 10px;
+  color: #fff;
 }
 
-.profile-container .menu-wrapper .project-container .project-wrapper .projects-info .photo-stats p .fas {
+.profile-container .menu-wrapper .project-container .project-wrapper .projects-info .user-stats .photo-stats p .fas {
   padding-right: 4px;
+}
+
+.profile-container .menu-wrapper .project-container .project-wrapper .projects:hover .projects-info {
+  visibility: visible;
+  opacity: 1;
+  box-shadow: inset 0px -40px 50px 0px rgba(0, 0, 0, 0.5);
 }
 
 .profile-container .profile-card {

@@ -276,50 +276,73 @@ section{
                     // margin-top: 30px ;
                     height: 256px;
                     width: 322px;
-                    border-radius: 6px 6px 0px 0px;
+                    border-radius: 6px;
                     overflow: hidden;
+                    margin-bottom: 22px;
+                    position: relative;
+                    
                     img{
-                        height: 275px;
+                        height: 100%;
                         width: 100%;
                         object-fit: cover;
+                        // visibility: hidden;
                     }
                     &-info{
                         background-color: transparent;
                         display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        padding: 7px 2px;
+                        width: 100%;
+                        flex-direction: column;
+                        padding: 7px 10px;
+                        // background-color: rgb(39, 77, 77);
                         @include fontstack;
-                        .user{
-                            display: flex;
-                            img{
-                                height: 20px;
-                                width: 20px;
-                                object-fit: cover;
-                                border-radius: 50%;
-                                margin-right: 5px;
-                            }
-                            p{
-                                font-size: 13px;
-                            }
+                        color:#fff;
+                        position: absolute;
+                        bottom: 0;
+                        visibility: hidden;
+                        transition: opacity .2s, visibility .2s;
+                        
+                        h4{
+                            color:#fff;
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 21px;
+                            padding-bottom: 6px;
                         }
-                        .photo-stats{
+                        .user-stats{
                             display: flex;
-                            font-size: 12px;
-                            color: $icon-clr;
-                            p{
-                                margin-right: 10px;
-                                .fas{
-                                    padding-right: 4px;
+                            justify-content: space-between;
+                            .user{
+                                p{
+                                    font-size: 13px;
                                 }
                             }
-                        }
+                            .photo-stats{
+                                display: flex;
+                                font-size: 12px;
+                                color: $icon-clr;
+                                padding-bottom: 6px;
+                                p{
+                                    margin-right: 10px;
+                                    color:#fff;
+                                    .fas{
+                                        padding-right: 4px;
+                                    }
+                                }
+                            }
+                        }   
+                    }
+                    &:hover .projects-info{
+                        visibility: visible;
+                        opacity: 1;
+                        box-shadow: inset 0px -40px 50px 0px rgba(0, 0, 0, 0.50);
                     }
                 }
             }
         }
         // Project Section Ends Here
     }
+
+    // User Profile Card
     .profile-card {
         height: 446px;
         width: 362px;
