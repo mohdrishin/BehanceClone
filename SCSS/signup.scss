@@ -12,6 +12,11 @@ body{
     background-attachment: fixed;
     cursor: pointer;
 }
+
+
+
+// Signup Page Stylesheet
+
 .signup-container{
     height: 90vh;
     margin:30px;
@@ -149,7 +154,152 @@ body{
                     color: #6e6e6e;
                 }
             }
-            
+
+        }
+    }
+}
+
+
+// Signin Page Stylesheet
+
+.signin-container{
+    height: 90vh;
+    margin:30px;
+    width: auto;
+    @include flexAllCnt;
+    @include fontstack;
+    .logo-wrapper{
+        width: 50%;
+        height: 100%;
+        @include flexAllCnt;
+        img{
+            height: 40px;
+            width: 40px;
+            margin-right: 20px;
+        }
+        h3{
+            font-family: $font-secondary;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 30px;
+            color: $profile-bg;
+        }
+    }
+    .signin-form-wrapper{
+        width: 50%;
+        height: 100%;
+        .signin-form-box{
+            height: 100%;
+            width: 500px;
+            background-color: $bgcolor;
+            border-radius: 6px;
+            border: 1px solid transparent;
+            box-shadow: $shadow-md;
+            margin-left: 20px;
+            padding: 100px 55px;
+            @include secfontstack;
+            h5{
+                font-weight: 600;
+                font-size: 13px;
+                color: $text-signup;
+                padding-bottom: 12px;
+            }
+            .signin-logo-wrapper{
+                display: flex;
+                align-items: center;
+                img{
+                    height: 35px;
+                    width: 35px;
+                    margin-right: 15px;
+                }
+                h3{
+                    font-family: $font-secondary;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 25px;
+                    color: $text-primary;
+                }
+            }
+            form{
+                margin: 40px 0px;
+                .form-container{
+                    label{
+                        width: 100%;
+                        font-weight: 400;
+                        font-size: 12px;
+                        color: #747474;
+                        // margin: 10px 0px;
+                    }
+                    input[type=text], input[type=password]{
+                        height: 30px;
+                        width: 100%;
+                        display: inline-block;
+                        border: none;
+                        padding: 15px;
+                        border-bottom: 1px solid $project-text;
+                    }
+                    input[type=text]:focus, input[type=password]:focus {
+                        background-color: #ddd;
+                        outline: none;
+                    }
+                }    
+            }
+            p{
+                font-weight: 500;
+                font-size: 14px;
+                color: #505050;
+                span{
+                    color: $add-clr;
+                    a{
+                        text-decoration: none;
+                        color: $add-clr;
+                    }
+                }
+            }
+            .signin-button{
+                padding: 6px;
+                width:120px;
+                border-radius: 20px;
+                border:1px solid transparent;
+                background-color: $add-clr;
+                color: $bgcolor;
+                font-weight: 500;
+                font-family: $font-secondary;
+                margin: 20px 0px;
+                cursor: pointer;
+                a{
+                    text-decoration: none;
+                    color: $bgcolor;
+                }
+            }
+            .facebook-login, .google-login{
+                width:100%;
+                height: 42px;
+                padding: 6px;
+                border-radius: 20px;
+                border:1px solid transparent;
+                background-color: #3f5c94;
+                color: $bgcolor;
+                font-weight: 500;
+                font-family: $font-secondary;
+                margin:15px 0px 4px;
+                font-size: 16px;
+                a{
+                    text-decoration: none;
+                    color: $bgcolor;
+                }
+                .fab{
+                    margin-right: 10px;
+                }
+            }
+            .google-login{
+                border:1px solid $icon-clr;
+                background-color: #ffffff;
+                a{
+                    color: #6e6e6e;
+                }
+            }
+
         }
     }
 }
