@@ -110,64 +110,6 @@ section{
                 }
             }
         }
-
-
-
-
-        
-        // &-right{
-        //     height: 100%;
-        //     width: 712px;
-        //     // background-color: yellow;
-            
-        //     &-headerbar{
-        //         height: 81px;
-        //         // width: 100%;
-        //         border-bottom: 2px solid $message-border;
-        //         padding: 20px;
-        //         display: flex;
-        //         align-items: center;
-        //         justify-content: space-between;
-        //         p{
-        //             font-weight: 400;
-        //             font-size: 20px;
-        //             color: $button-activebg;
-        //             span{
-        //                 color: $add-clr;
-        //                 a{
-        //                     text-decoration: none;
-        //                     color: $add-clr;
-        //                 }
-        //                 &:hover{
-        //                     text-decoration: underline $add-clr;
-        //                 }
-        //             }
-        //         }
-        //     }
-        //     &-chats{
-        //         height: 415px;
-        //         width: 692px;
-        //         overflow: auto;
-        //         padding: 20px;
-        //     }
-        //     &-type-message{
-        //         height: 114px;
-        //         width: 712px;
-        //         @include flexAllCnt;
-        //         border-top: 2px solid $message-border;
-        //         input{
-        //             height: 40px;
-        //             width: 625px;
-        //             padding: 10px;
-        //             border: 2px solid $message-border;
-        //             &:focus{
-        //                 outline: none !important;
-        //                 border-color: $add-clr;
-        //             }
-        //         }
-        //     }
-        // }
-
     }
 }
 
@@ -176,3 +118,75 @@ section{
 
 // Message Css Stylesheet here
 
+.messaging-box{
+    width: 900px;
+    height: 570px;
+    background-color: $bgcolor;
+    box-shadow: $shadow-lg;
+    margin: 28px auto 0px;
+    border: 2px solid $message-border;
+    border-radius: 6px;
+    display: flex;
+    &-right{
+        height: 100%;
+        width: 100%;        
+        &-headerbar{
+            height: 81px;
+            width: 100%;
+            border-bottom: 2px solid $message-border;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            a{
+                .fas{
+                    color: $icon-clr;
+                    margin-right: 50px;
+                }
+            }
+            img{
+                height: 45px;
+                width: 45px;
+                object-fit: cover;
+                margin-right: 12px;
+                border-radius: 50%;
+            }
+            p{
+                font-weight: 400;
+                font-size: 20px;
+                color: $button-activebg;
+                span{
+                    color: $add-clr;
+                    a{
+                        text-decoration: none;
+                        color: $add-clr;
+                    }
+                    &:hover{
+                        text-decoration: underline $add-clr;
+                    }
+                }
+            }
+        }
+        &-chats{
+            height: 400px;
+            width: 692px;
+            overflow: auto;
+            padding: 40px;
+        }
+        &-type-message{
+            height: 90px;
+            width: 100%;
+            @include flexAllCnt;
+            border-top: 2px solid $message-border;
+            input{
+                height: 40px;
+                width: 700px;
+                padding: 10px;
+                border: 2px solid $message-border;
+                &:focus{
+                    outline: none !important;
+                    border-color: $add-clr;
+                }
+            }
+        }
+    }
+}
