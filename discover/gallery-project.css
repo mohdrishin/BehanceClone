@@ -269,6 +269,50 @@ section .project-adds-options .add-comments {
   grid-column: 1 /4;
   border: 1px solid #e6e6e6;
   background-color: #f9f9f9;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+section .project-adds-options .add-comments .userdp-commentbox {
+  width: auto;
+  height: 60%;
+  display: flex;
+}
+
+section .project-adds-options .add-comments .userdp-commentbox img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+section .project-adds-options .add-comments .userdp-commentbox textarea {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
+  padding: 20px;
+}
+
+section .project-adds-options .add-comments button {
+  margin-top: 20px;
+  margin-left: 70%;
+  height: 33px;
+  width: 131px;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  color: #191919;
+}
+
+section .project-adds-options .add-comments button:hover {
+  background-color: #959595;
 }
 
 section .project-adds-options .user-details {

@@ -97,6 +97,45 @@ section{
             grid-row: 1 / 4;
             grid-column: 1 /4;
             @include projectgridBorder;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            .userdp-commentbox{
+                width: auto;
+                height: 60%;
+                display: flex;
+                img{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-right: 10px;
+                }
+                textarea{
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 6px;
+                    border: 1px solid $message-border;
+                    padding: 20px;
+                }
+            }
+            button{
+                margin-top: 20px;
+                margin-left: 70%;
+                height: 33px;
+                width: 131px;
+                padding: 8px;
+                border-radius: 20px;
+                border:1px solid $message-border;
+                background-color: $bgcolor;
+                cursor: pointer;
+                font-weight: 600;
+                font-size: 13px;
+                color: $text-primary;
+                &:hover{
+                    background-color: $project-text;
+                }
+            }
         }
         .user-details{
             grid-row: 1 / 4;
