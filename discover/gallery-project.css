@@ -172,7 +172,7 @@ header .right-nav .profile img {
 }
 
 body {
-  background-color: #a2e262;
+  background-color: #f9f9f9;
   color: #191919;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
@@ -181,12 +181,13 @@ body {
 }
 
 section {
-  height: 1000vh;
+  height: max-content;
   width: auto;
-  margin: 0px 145px;
+  margin: 0px 145px 80px;
   background-color: #fafafa;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 section .project-details-wrapper {
@@ -251,5 +252,52 @@ section .project-showcase-wrapper img {
   object-fit: cover;
   width: 100%;
   margin: -3px 0px;
+}
+
+section .project-adds-options {
+  margin: 92px 101px;
+  width: auto;
+  height: 160vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+  gap: 0px 10px;
+}
+
+section .project-adds-options .add-comments {
+  grid-row: 1 / 4;
+  grid-column: 1 /4;
+  border: 1px solid #e6e6e6;
+  background-color: #f9f9f9;
+}
+
+section .project-adds-options .user-details {
+  grid-row: 1 / 4;
+  grid-column: 4 /6;
+  border: 1px solid #e6e6e6;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+}
+
+section .project-adds-options .comments-shows {
+  grid-row: 4 / 14;
+  grid-column: 1 /4;
+  border: 1px solid #e6e6e6;
+  background-color: #f9f9f9;
+}
+
+section .project-adds-options .more-comments-tab {
+  grid-row: 14 / 15;
+  grid-column: 1 /4;
+  border: 1px solid #e6e6e6;
+  background-color: #f9f9f9;
+}
+
+section .project-adds-options .project-tags-list {
+  grid-column: 4 /6;
+  grid-row: 6 / 10;
+  border: 1px solid #e6e6e6;
+  background-color: #f9f9f9;
+  border-radius: 6px;
 }
 /*# sourceMappingURL=gallery-project.css.map */

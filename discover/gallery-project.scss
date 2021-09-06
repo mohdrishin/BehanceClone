@@ -10,19 +10,19 @@ header{
     @include header;
 }
 body{
-    background-color: rgb(162, 226, 98);
+    background-color: $profile-bg;
     @include fontstack;
 }
 
 section{
-    height: 1000vh;
+    height: max-content;
     width: auto;
-    margin: 0px 145px;
+    margin: 0px 145px 80px;
     background-color: $gallery-cardbg;
     // border: 1px solid $message-border;
     display: flex;
     flex-direction: column;
-
+    box-shadow: $shadow-lg;
     // First Section Project Name User Details Starts Here
     .project-details-wrapper{
         height: 83px;
@@ -82,6 +82,45 @@ section{
         }
     }
     // Project Images Ends
+
+    // Project Comments, Follow, Tags Start Here
+    .project-adds-options{
+        margin: 92px 101px;
+        // background-color: turquoise;
+        width: auto;
+        height: 160vh;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(14, 1fr);
+        gap: 0px 10px;
+        .add-comments{
+            grid-row: 1 / 4;
+            grid-column: 1 /4;
+            @include projectgridBorder;
+        }
+        .user-details{
+            grid-row: 1 / 4;
+            grid-column: 4 /6;
+            @include projectgridBorder;
+            border-radius: 6px;
+        }
+        .comments-shows{
+            grid-row: 4 / 14;
+            grid-column: 1 /4;
+            @include projectgridBorder;
+        }
+        .more-comments-tab{
+            grid-row: 14 / 15;
+            grid-column: 1 /4;
+            @include projectgridBorder;
+        }
+        .project-tags-list{
+            grid-column: 4 /6;
+            grid-row: 6 / 10;
+            @include projectgridBorder;
+            border-radius: 6px;
+        }
+    }
 
 
 

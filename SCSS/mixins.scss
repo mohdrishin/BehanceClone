@@ -24,6 +24,10 @@
    align-items: center; 
 }
 
+@mixin projectgridBorder{
+    border: 1px solid $message-border;
+    background-color: $profile-bg;
+}
 
 
 
