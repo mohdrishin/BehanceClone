@@ -137,6 +137,10 @@ section{
                 }
             }
         }
+
+
+
+
         .user-details{
             grid-row: 1 / 4;
             grid-column: 4 /6;
@@ -224,8 +228,25 @@ section{
         .project-tags-list{
             grid-column: 4 /6;
             grid-row: 6 / 10;
+            height: max-content;
             @include projectgridBorder;
             border-radius: 6px;
+            padding: 25px;
+            button{
+                padding:10px;
+                height: 36px;
+                border-radius: 20px;
+                margin: 10px 10px 10px 0px;
+                border: 1px solid $message-border;
+                cursor: pointer;
+                background-color: $profile-bg;
+                font-size: 14px;
+                font-weight: 600;
+                color: $text-primary;
+                &:hover{
+                    background-color: $project-box;
+                }
+            }
         }
     }
 

@@ -416,8 +416,27 @@ section .project-adds-options .more-comments-tab {
 section .project-adds-options .project-tags-list {
   grid-column: 4 /6;
   grid-row: 6 / 10;
+  height: max-content;
   border: 1px solid #e6e6e6;
   background-color: #f9f9f9;
   border-radius: 6px;
+  padding: 25px;
+}
+
+section .project-adds-options .project-tags-list button {
+  padding: 10px;
+  height: 36px;
+  border-radius: 20px;
+  margin: 10px 10px 10px 0px;
+  border: 1px solid #e6e6e6;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  font-weight: 600;
+  color: #191919;
+}
+
+section .project-adds-options .project-tags-list button:hover {
+  background-color: #c4bdbd;
 }
 /*# sourceMappingURL=gallery-project.css.map */
