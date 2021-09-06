@@ -180,6 +180,60 @@ body {
   font-style: normal;
 }
 
+.project-details-wrapper {
+  height: 83px;
+  width: auto;
+  margin: 0px 145px;
+  display: flex;
+  align-items: center;
+}
+
+.project-details-wrapper img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.project-details-wrapper div {
+  margin: 0px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-details-wrapper div p {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.project-details-wrapper div h5 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #191919;
+  cursor: pointer;
+}
+
+.project-details-wrapper div h5 a {
+  text-decoration: none;
+  color: #191919;
+}
+
+.project-details-wrapper div h5:hover {
+  text-decoration: underline;
+}
+
+.project-details-wrapper ul {
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 30px;
+  color: #696969;
+  cursor: pointer;
+}
+
+.project-details-wrapper ul li:hover {
+  text-decoration: underline;
+}
+
 section {
   height: max-content;
   width: auto;
@@ -188,59 +242,6 @@ section {
   display: flex;
   flex-direction: column;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
-section .project-details-wrapper {
-  height: 83px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-section .project-details-wrapper img {
-  height: 40px;
-  width: 40px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-section .project-details-wrapper div {
-  margin: 0px 15px;
-  display: flex;
-  flex-direction: column;
-}
-
-section .project-details-wrapper div p {
-  font-weight: 700;
-  font-size: 16px;
-}
-
-section .project-details-wrapper div h5 {
-  font-weight: 400;
-  font-size: 14px;
-  color: #191919;
-  cursor: pointer;
-}
-
-section .project-details-wrapper div h5 a {
-  text-decoration: none;
-  color: #191919;
-}
-
-section .project-details-wrapper div h5:hover {
-  text-decoration: underline;
-}
-
-section .project-details-wrapper ul {
-  font-weight: 400;
-  font-size: 14px;
-  margin-left: 30px;
-  color: #696969;
-  cursor: pointer;
-}
-
-section .project-details-wrapper ul li:hover {
-  text-decoration: underline;
 }
 
 section .project-showcase-wrapper {
