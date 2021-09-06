@@ -164,7 +164,7 @@ header .right-nav .profile img {
 }
 
 section {
-  background-color: yellowgreen;
+  background-color: #f9f9f9;
   height: 93vh;
   width: 100%;
   display: flex;
@@ -235,6 +235,35 @@ section .messaging-box-left-headerbar button:hover {
   background-color: #013ecb;
 }
 
+section .messaging-box-left-userlist {
+  display: flex;
+  flex-direction: column;
+}
+
+section .messaging-box-left-userlist .user {
+  height: 81px;
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  cursor: pointer;
+}
+
+section .messaging-box-left-userlist .user img {
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+section .messaging-box-left-userlist .user p {
+  font-weight: 700;
+  font-size: 14px;
+  color: #191919;
+}
+
 section .messaging-box-right {
   height: 100%;
   width: 712px;
@@ -266,5 +295,33 @@ section .messaging-box-right-headerbar p span a {
 
 section .messaging-box-right-headerbar p span:hover {
   text-decoration: underline #0057ff;
+}
+
+section .messaging-box-right-chats {
+  height: 415px;
+  width: 692px;
+  overflow: auto;
+  padding: 20px;
+}
+
+section .messaging-box-right-type-message {
+  height: 114px;
+  width: 712px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #e6e6e6;
+}
+
+section .messaging-box-right-type-message input {
+  height: 40px;
+  width: 625px;
+  padding: 10px;
+  border: 2px solid #e6e6e6;
+}
+
+section .messaging-box-right-type-message input:focus {
+  outline: none !important;
+  border-color: #0057ff;
 }
 /*# sourceMappingURL=inbox.css.map */

@@ -11,8 +11,7 @@ header{
 }
 
 section{
-    // background-color: $profile-bg;
-    background-color: yellowgreen;
+    background-color: $profile-bg;
     height: 93vh;
     width: 100%;
     @include flexAllCnt;
@@ -68,11 +67,37 @@ section{
                     }
                 }
             }
+            &-userlist{
+                display: flex;
+                flex-direction: column;
+                .user{
+                    height: 81px;
+                    width: 100%;
+                    border-bottom: 1px solid $message-border;
+                    display: flex;
+                    align-items: center;
+                    padding: 25px;
+                    cursor: pointer;
+                    img{
+                        height: 45px;
+                        width: 45px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                        margin-right: 12px;
+                    }
+                    p{
+                        font-weight: 700;
+                        font-size: 14px;
+                        color: $text-primary;
+                    }
+                }
+            }
         }
         &-right{
             height: 100%;
             width: 712px;
             // background-color: yellow;
+            
             &-headerbar{
                 height: 81px;
                 // width: 100%;
@@ -94,6 +119,28 @@ section{
                         &:hover{
                             text-decoration: underline $add-clr;
                         }
+                    }
+                }
+            }
+            &-chats{
+                height: 415px;
+                width: 692px;
+                overflow: auto;
+                padding: 20px;
+            }
+            &-type-message{
+                height: 114px;
+                width: 712px;
+                @include flexAllCnt;
+                border-top: 2px solid $message-border;
+                input{
+                    height: 40px;
+                    width: 625px;
+                    padding: 10px;
+                    border: 2px solid $message-border;
+                    &:focus{
+                        outline: none !important;
+                        border-color: $add-clr;
                     }
                 }
             }
