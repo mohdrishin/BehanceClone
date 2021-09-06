@@ -51,7 +51,7 @@ body{
             border: 1px solid transparent;
             box-shadow: $shadow-md;
             margin-left: 20px;
-            padding: 55px;
+            padding: 30px 45px;
             @include secfontstack;
             h2{
                 font-weight: 600;
@@ -74,7 +74,7 @@ body{
                 }
             }
             form{
-                margin: 40px 0px;
+                margin: 20px 0px;
                 .form-container{
                     label{
                         width: 100%;
@@ -120,7 +120,7 @@ body{
                 color: $bgcolor;
                 font-weight: 500;
                 font-family: $font-secondary;
-                margin: 5px 270px;
+                margin: 10px 270px;
                 cursor: pointer;
                 a{
                     text-decoration: none;
@@ -137,7 +137,7 @@ body{
                 color: $bgcolor;
                 font-weight: 500;
                 font-family: $font-secondary;
-                margin:15px 0px 4px;
+                margin:5px 0px 4px;
                 font-size: 16px;
                 a{
                     text-decoration: none;

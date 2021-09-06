@@ -108,7 +108,7 @@ body {
   border: 1px solid transparent;
   box-shadow: 0 4px 6px -1px rgba(70, 42, 42, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   margin-left: 20px;
-  padding: 55px;
+  padding: 30px 45px;
   color: #191919;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
@@ -139,7 +139,7 @@ body {
 }
 
 .signup-container .signup-form-wrapper .signup-form-box form {
-  margin: 40px 0px;
+  margin: 20px 0px;
 }
 
 .signup-container .signup-form-wrapper .signup-form-box form .form-container label {
@@ -187,7 +187,7 @@ body {
   color: #fff;
   font-weight: 500;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin: 5px 270px;
+  margin: 10px 270px;
   cursor: pointer;
 }
 
@@ -206,7 +206,7 @@ body {
   color: #fff;
   font-weight: 500;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin: 15px 0px 4px;
+  margin: 5px 0px 4px;
   font-size: 16px;
 }
 
