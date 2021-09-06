@@ -62,6 +62,7 @@ body{
     }
 }
 // First Section Project Name User Details Ends Here
+
 section{
     height: max-content;
     width: auto;
@@ -257,12 +258,6 @@ section{
             }
         }
 
-
-
-
-
-
-
         .project-tags-list{
             grid-column: 4 /6;
             grid-row: 6 / 10;
@@ -287,7 +282,5 @@ section{
             }
         }
     }
-
-
-
 }
+
