@@ -257,7 +257,7 @@ section .project-showcase-wrapper img {
 section .project-adds-options {
   margin: 92px 101px;
   width: auto;
-  height: 160vh;
+  height: 140vh;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(14, 1fr);
@@ -404,13 +404,48 @@ section .project-adds-options .comments-shows {
   grid-column: 1 /4;
   border: 1px solid #e6e6e6;
   background-color: #f9f9f9;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
-section .project-adds-options .more-comments-tab {
-  grid-row: 14 / 15;
-  grid-column: 1 /4;
-  border: 1px solid #e6e6e6;
-  background-color: #f9f9f9;
+section .project-adds-options .comments-shows .user {
+  display: flex;
+  padding: 20px 0px;
+}
+
+section .project-adds-options .comments-shows .user img {
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+section .project-adds-options .comments-shows .user div {
+  margin: 0px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+section .project-adds-options .comments-shows .user div h5 {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+section .project-adds-options .comments-shows .user div h5 a {
+  text-decoration: none;
+  color: #191919;
+}
+
+section .project-adds-options .comments-shows .user div h5:hover {
+  text-decoration: underline;
+}
+
+section .project-adds-options .comments-shows .user div p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #696969;
+  cursor: pointer;
 }
 
 section .project-adds-options .project-tags-list {

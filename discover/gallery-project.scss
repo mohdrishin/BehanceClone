@@ -88,7 +88,7 @@ section{
         margin: 92px 101px;
         // background-color: turquoise;
         width: auto;
-        height: 160vh;
+        height: 140vh;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(14, 1fr);
@@ -219,12 +219,50 @@ section{
             grid-row: 4 / 14;
             grid-column: 1 /4;
             @include projectgridBorder;
+            padding:25px;
+            display: flex;
+            flex-direction: column;
+            // height: max-content;
+            .user{
+                display: flex;
+                padding: 20px 0px;
+                img{
+                    height: 45px;
+                    width: 45px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+                div{
+                    margin:0px 15px;
+                    display: flex;
+                    flex-direction: column;
+                    h5{
+                        font-weight: 700;
+                        font-size: 16px;
+                        a{
+                            text-decoration: none;
+                            color: $text-primary;
+                        }
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                    p{
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: $icon-clr;
+                        cursor: pointer;
+                    }  
+                }
+            }
         }
-        .more-comments-tab{
-            grid-row: 14 / 15;
-            grid-column: 1 /4;
-            @include projectgridBorder;
-        }
+
+
+
+
+
+
+
         .project-tags-list{
             grid-column: 4 /6;
             grid-row: 6 / 10;
