@@ -170,6 +170,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #191919;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
 }
 
 section .messaging-box {
@@ -180,5 +185,86 @@ section .messaging-box {
   margin: 28px auto 0px;
   border: 2px solid #e6e6e6;
   border-radius: 6px;
+  display: flex;
+}
+
+section .messaging-box-left {
+  height: 100%;
+  width: 434px;
+  border-right: 3px solid #e6e6e6;
+}
+
+section .messaging-box-left-headerbar {
+  height: 81px;
+  width: 100%;
+  border-bottom: 2px solid #e6e6e6;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .messaging-box-left-headerbar p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #191919;
+}
+
+section .messaging-box-left-headerbar p .fas {
+  margin-right: 7px;
+  color: #0057ff;
+}
+
+section .messaging-box-left-headerbar button {
+  height: 32px;
+  width: 111px;
+  background-color: #0057ff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+}
+
+section .messaging-box-left-headerbar button .fas {
+  color: #fff;
+  margin-right: 7px;
+}
+
+section .messaging-box-left-headerbar button:hover {
+  background-color: #013ecb;
+}
+
+section .messaging-box-right {
+  height: 100%;
+  width: 712px;
+}
+
+section .messaging-box-right-headerbar {
+  height: 81px;
+  border-bottom: 2px solid #e6e6e6;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .messaging-box-right-headerbar p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #191919;
+}
+
+section .messaging-box-right-headerbar p span {
+  color: #0057ff;
+}
+
+section .messaging-box-right-headerbar p span a {
+  text-decoration: none;
+  color: #0057ff;
+}
+
+section .messaging-box-right-headerbar p span:hover {
+  text-decoration: underline #0057ff;
 }
 /*# sourceMappingURL=inbox.css.map */

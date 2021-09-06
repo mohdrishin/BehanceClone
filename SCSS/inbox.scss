@@ -16,6 +16,7 @@ section{
     height: 93vh;
     width: 100%;
     @include flexAllCnt;
+    @include fontstack;
     // margin-top: 10px;
     // margin: 100px auto;
     .messaging-box{
@@ -26,6 +27,77 @@ section{
         margin: 28px auto 0px;
         border: 2px solid $message-border;
         border-radius: 6px;
-        
+        display: flex;
+        &-left{
+            height: 100%;
+            width: 434px;
+            // background-color: wheat;
+            border-right: 3px solid $message-border;
+            &-headerbar{
+                height: 81px;
+                width: 100%;
+                border-bottom: 2px solid $message-border;
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p{
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: $text-primary;
+                    .fas{
+                        margin-right: 7px;
+                        color: $add-clr;
+                    }
+                }
+                button{
+                    height: 32px;
+                    width: 111px;
+                    background-color: $add-clr;
+                    color: $bgcolor;
+                    font-weight: 600;
+                    font-size: 14px;
+                    border-radius: 20px;
+                    border: 1px solid transparent;
+                    .fas{
+                        color: $bgcolor;
+                        margin-right: 7px;
+                    }
+                    &:hover{
+                        background-color: #013ecb;
+                    }
+                }
+            }
+        }
+        &-right{
+            height: 100%;
+            width: 712px;
+            // background-color: yellow;
+            &-headerbar{
+                height: 81px;
+                // width: 100%;
+                border-bottom: 2px solid $message-border;
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p{
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: $button-activebg;
+                    span{
+                        color: $add-clr;
+                        a{
+                            text-decoration: none;
+                            color: $add-clr;
+                        }
+                        &:hover{
+                            text-decoration: underline $add-clr;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
