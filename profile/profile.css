@@ -145,6 +145,14 @@ header .right-nav button {
   margin-right: 20px;
 }
 
+header .right-nav a {
+  color: #000;
+}
+
+header .right-nav a i {
+  color: #000;
+}
+
 header .right-nav i {
   margin-right: 15px;
 }

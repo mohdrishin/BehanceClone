@@ -1,0 +1,88 @@
+@import '../SCSS/mixins.scss' ;
+@import '../SCSS/variables.scss' ;
+@import '../SCSS/functions.scss' ;
+
+* {
+    @include reset;
+}
+
+header{
+    @include header;
+}
+body{
+    background-color: rgb(162, 226, 98);
+    @include fontstack;
+}
+
+section{
+    height: 1000vh;
+    width: auto;
+    margin: 0px 145px;
+    background-color: $gallery-cardbg;
+    // border: 1px solid $message-border;
+    display: flex;
+    flex-direction: column;
+
+    // First Section Project Name User Details Starts Here
+    .project-details-wrapper{
+        height: 83px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        img{
+            height: 40px;
+            width: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+            
+        }
+        div{
+            margin:0px 15px;
+            display: flex;
+            flex-direction: column;
+            p{
+                font-weight: 700;
+                font-size: 16px;
+            }
+            h5{
+                font-weight: 400;
+                font-size: 14px;
+                color: $text-primary;
+                cursor: pointer;
+                a{
+                    text-decoration: none;
+                    color: $text-primary;
+                }
+                &:hover{
+                    text-decoration: underline;
+                }
+            }  
+        }
+        ul{
+            font-weight: 400;
+            font-size: 14px;
+            margin-left: 30px;
+            color: $icon-clr;
+            cursor: pointer;
+            li:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    // First Section Project Name User Details Ends Here
+
+    // Project Images
+    .project-showcase-wrapper{
+        width: 100%;
+        height: max-content;
+        img{
+            object-fit: cover;
+            width: 100%;
+            margin: -3px 0px;
+        }
+    }
+    // Project Images Ends
+
+
+
+}

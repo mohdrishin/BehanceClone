@@ -1,0 +1,255 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  color: #191919;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  color: #191919;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  color: #191919;
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  color: #191919;
+}
+
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  color: #191919;
+}
+
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  color: #191919;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 53px;
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 23px;
+  border-bottom: 1px solid #dfdfdf;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px -1px rgba(70, 42, 42, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+header .left-nav {
+  display: flex;
+  align-items: center;
+  color: #191919;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  font-size: 16px;
+}
+
+header .left-nav img {
+  margin-right: 18px;
+  height: 15px;
+}
+
+header .left-nav ul {
+  list-style: none;
+}
+
+header .left-nav ul li {
+  display: inline-block;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+header .left-nav ul li a {
+  text-decoration: none;
+  color: #191919;
+}
+
+header .input-container {
+  position: relative;
+}
+
+header .input-container input {
+  width: 400px;
+  height: 33px;
+  border-radius: 20px;
+  border: 2px solid #dfdfdf;
+  padding: 10px 0px 10px 30px;
+  color: #191919;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+header .input-container img {
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  width: 17px;
+  height: 17px;
+}
+
+header .right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .right-nav button {
+  width: 144px;
+  height: 33px;
+  border-radius: 20px;
+  color: #191919;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  border: 1px solid #dfdfdf;
+  background-color: transparent;
+  margin-right: 20px;
+}
+
+header .right-nav a {
+  color: #000;
+}
+
+header .right-nav a i {
+  color: #000;
+}
+
+header .right-nav i {
+  margin-right: 15px;
+}
+
+header .right-nav .profile {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+header .right-nav .profile img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #a2e262;
+  color: #191919;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+}
+
+section {
+  height: 1000vh;
+  width: auto;
+  margin: 0px 145px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+}
+
+section .project-details-wrapper {
+  height: 83px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+section .project-details-wrapper img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+section .project-details-wrapper div {
+  margin: 0px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+section .project-details-wrapper div p {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+section .project-details-wrapper div h5 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #191919;
+  cursor: pointer;
+}
+
+section .project-details-wrapper div h5 a {
+  text-decoration: none;
+  color: #191919;
+}
+
+section .project-details-wrapper div h5:hover {
+  text-decoration: underline;
+}
+
+section .project-details-wrapper ul {
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 30px;
+  color: #696969;
+  cursor: pointer;
+}
+
+section .project-details-wrapper ul li:hover {
+  text-decoration: underline;
+}
+
+section .project-showcase-wrapper {
+  width: 100%;
+  height: max-content;
+}
+
+section .project-showcase-wrapper img {
+  object-fit: cover;
+  width: 100%;
+  margin: -3px 0px;
+}
+/*# sourceMappingURL=gallery-project.css.map */
