@@ -321,6 +321,82 @@ section .project-adds-options .user-details {
   border: 1px solid #e6e6e6;
   background-color: #f9f9f9;
   border-radius: 6px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+section .project-adds-options .user-details small {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #696969;
+}
+
+section .project-adds-options .user-details .user {
+  display: flex;
+  padding: 10px 0px;
+}
+
+section .project-adds-options .user-details .user img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+section .project-adds-options .user-details .user div {
+  margin: 0px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+section .project-adds-options .user-details .user div p {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+section .project-adds-options .user-details .user div p a {
+  text-decoration: none;
+  color: #191919;
+}
+
+section .project-adds-options .user-details .user div p:hover {
+  text-decoration: underline;
+}
+
+section .project-adds-options .user-details .user div h5 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #696969;
+  cursor: pointer;
+}
+
+section .project-adds-options .user-details .user div h5:hover {
+  text-decoration: underline;
+}
+
+section .project-adds-options .user-details .user div h5 i {
+  margin-right: 8px;
+  color: #696969;
+}
+
+section .project-adds-options .user-details button {
+  background-color: #0057ff;
+  padding: 10px;
+  border-radius: 20px;
+  color: #f9f9f9;
+  border: 1px solid transparent;
+  margin: 5px 0;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+section .project-adds-options .user-details button.hire-button {
+  background-color: #f9f9f9;
+  color: #0057ff;
+  border: 1px solid #dee8ff;
+  cursor: pointer;
 }
 
 section .project-adds-options .comments-shows {

@@ -142,7 +142,75 @@ section{
             grid-column: 4 /6;
             @include projectgridBorder;
             border-radius: 6px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            small{
+                text-transform:uppercase;
+                font-size: 11px;
+                color: $icon-clr;
+            }
+            .user{
+                display: flex;
+                padding: 10px 0px;
+                img{
+                    height: 40px;
+                    width: 40px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+                div{
+                    margin:0px 15px;
+                    display: flex;
+                    flex-direction: column;
+                    p{
+                        font-weight: 700;
+                        font-size: 16px;
+                        a{
+                            text-decoration: none;
+                            color: $text-primary;
+                        }
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                    h5{
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: $icon-clr;
+                        cursor: pointer;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                        i{
+                            margin-right: 8px;
+                            color: $icon-clr;
+                        }
+                    }  
+                }
+            }
+            button{
+                background-color: $add-clr;
+                padding: 10px;
+                border-radius:20px;
+                color: $profile-bg;
+                border: 1px solid transparent;
+                margin: 5px 0;
+                font-weight: 700;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            button.hire-button{
+                background-color: $profile-bg;
+                color: $add-clr;
+                border: 1px solid $project-plus;
+                cursor: pointer;
+            }
         }
+
+
+
+
         .comments-shows{
             grid-row: 4 / 14;
             grid-column: 1 /4;
