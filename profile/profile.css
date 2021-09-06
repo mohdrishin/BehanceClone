@@ -64,7 +64,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(70, 42, 42, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 header .left-nav {
@@ -579,7 +579,7 @@ section .profile-card p {
   top: 60px;
   left: 50px;
   border-radius: 4px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(70, 42, 42, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   padding: 33px;
   color: #191919;
   font-family: Arial, Helvetica, sans-serif;

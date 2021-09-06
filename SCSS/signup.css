@@ -106,7 +106,7 @@ body {
   background-color: #fff;
   border-radius: 6px;
   border: 1px solid transparent;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(70, 42, 42, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   margin-left: 20px;
   padding: 55px;
   color: #191919;
@@ -275,7 +275,7 @@ body {
   background-color: #fff;
   border-radius: 6px;
   border: 1px solid transparent;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(70, 42, 42, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   margin-left: 20px;
   padding: 100px 55px;
   color: #191919;
