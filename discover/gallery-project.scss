@@ -284,3 +284,62 @@ section{
     }
 }
 
+.side-box{
+    height: 362px;
+    width: 105px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 133px;
+    right: 40px;
+    div{
+        height: 90px;
+        width: 100%;
+        margin-bottom: 2px;
+        @include flexAllCnt;
+        flex-direction: column;
+        cursor: pointer;
+        small{
+            font-weight: 700;
+            font-size: 11px;
+            color: $project-text;
+        }
+    }
+    &-user-follow{
+        img{
+            height: 49px;
+            width: 49px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 5px; 
+        }
+    }
+    &-hire-us{
+        div{
+            border-radius: 50%;
+            height: 49px;
+            width: 49px;
+            border: 1px solid $message-border;
+        }
+    }
+    &-save{
+        div{
+            border-radius: 50%;
+            height: 49px;
+            width: 49px;
+            border: 1px solid $message-border;
+        }
+    }
+    &-appreciate{
+        div{
+            border-radius: 50%;
+            height: 49px;
+            width: 49px;
+            border: 1px solid $add-clr;
+            background-color: $add-clr;
+            .fas{
+                color: #fff;
+            }
+        }
+    }
+}

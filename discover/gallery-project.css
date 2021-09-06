@@ -475,4 +475,65 @@ section .project-adds-options .project-tags-list button {
 section .project-adds-options .project-tags-list button:hover {
   background-color: #c4bdbd;
 }
+
+.side-box {
+  height: 362px;
+  width: 105px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 133px;
+  right: 40px;
+}
+
+.side-box div {
+  height: 90px;
+  width: 100%;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.side-box div small {
+  font-weight: 700;
+  font-size: 11px;
+  color: #959595;
+}
+
+.side-box-user-follow img {
+  height: 49px;
+  width: 49px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.side-box-hire-us div {
+  border-radius: 50%;
+  height: 49px;
+  width: 49px;
+  border: 1px solid #e6e6e6;
+}
+
+.side-box-save div {
+  border-radius: 50%;
+  height: 49px;
+  width: 49px;
+  border: 1px solid #e6e6e6;
+}
+
+.side-box-appreciate div {
+  border-radius: 50%;
+  height: 49px;
+  width: 49px;
+  border: 1px solid #0057ff;
+  background-color: #0057ff;
+}
+
+.side-box-appreciate div .fas {
+  color: #fff;
+}
 /*# sourceMappingURL=gallery-project.css.map */
