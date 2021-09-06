@@ -1,0 +1,31 @@
+@import '../SCSS/mixins.scss' ;
+@import '../SCSS/variables.scss' ;
+@import '../SCSS/functions.scss' ;
+
+* {
+    @include reset;
+}
+
+header{
+    @include header;
+}
+
+section{
+    // background-color: $profile-bg;
+    background-color: yellowgreen;
+    height: 93vh;
+    width: 100%;
+    @include flexAllCnt;
+    // margin-top: 10px;
+    // margin: 100px auto;
+    .messaging-box{
+        width: 1142px;
+        height: 614px;
+        background-color: $bgcolor;
+        box-shadow: $shadow-lg;
+        margin: 28px auto 0px;
+        border: 2px solid $message-border;
+        border-radius: 6px;
+        
+    }
+}
